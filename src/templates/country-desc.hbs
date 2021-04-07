@@ -1,0 +1,16 @@
+<h1 class="desc-title">{{name}}</h1>
+<div class='desc-container'>
+    <div class='text-container'>
+        <p class="large-text">Capital: <span class="text">{{capital}}</span></p>
+        <p class="large-text">Population: <span class="text">{{population}}</span></p>
+        <p class="large-text">Languages:</p>
+        <ul>
+            {{#each languages}}
+            <li class="text">{{name}}</li>
+            {{/each}}
+        </ul>
+    </div>
+    <div class='img-container'>
+        <img class='flag-img' src="{{flag}}" alt="flag">
+    </div>
+</div>
